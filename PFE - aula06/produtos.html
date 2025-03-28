@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IPlast - Produtos</title>
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+  <header>
+    <h1>IPlast</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="funcionarios.html">Funcionários</a>
+      <a href="clientes.html">Clientes</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Cadastre um produto</h2>
+    
+    <form id="form-produto">
+      <label><strong>Nome</strong></label>
+      <input type="text" placeholder="Nome" required>
+      
+      <label>Descrição</label>
+      <input type="text" placeholder="Descrição" required>
+      
+      <label>Valor de custo</label>
+      <input type="number" step="0.01" placeholder="0,00" required>
+      
+      <label>Valor de venda</label>
+      <input type="number" step="0.01" placeholder="0,00" required>
+      
+      <button type="submit" class="btn-primary">Cadastrar</button>
+    </form>
+
+    <h2>Novo Produto</h2>
+    <table id="tabela-produto">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Descrição</th>
+          <th>Vs. Custo</th>
+          <th>Vs. Final</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Amos</td>
+          <td>Amos bancos</td>
+          <td>R$2,00</td>
+          <td>R$10,00</td>
+          <td><button class="btn-danger" onclick="excluirLinha(this)">Excluir</button></td>
+        </tr>
+        <tr>
+          <td>Feijão</td>
+          <td>Feijão preto</td>
+          <td>R$10,00</td>
+          <td>R$25,00</td>
+          <td><button class="btn-danger" onclick="excluirLinha(this)">Excluir</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>Desenvolvido por Kauê</p>
+    <p>IPlast - Indústria de Plásticos</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

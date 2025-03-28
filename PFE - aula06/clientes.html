@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IPlast - Clientes</title>
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+  <header>
+    <h1>IPlast</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="funcionarios.html">Funcionários</a>
+      <a href="clientes.html">Clientes</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Cadastre um Cliente</h2>
+    
+    <form id="form-cliente">
+      <label>Nome</label>
+      <input type="text" placeholder="Nome" required>
+      
+      <label>CPF</label>
+      <input type="text" placeholder="000.000.000-00" required>
+      
+      <label>E-mail</label>
+      <input type="email" placeholder="email@exemplo.com" required>
+      
+      <label>Logradouro</label>
+      <input type="text" placeholder="Rua, número, bairro" required>
+      
+      <button type="submit" class="btn-primary">Cadastrar</button>
+    </form>
+
+    <h2>Novo Cliente</h2>
+    <table id="tabela-cliente">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>CPF</th>
+          <th>E-mail</th>
+          <th>Logradouro</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>julio Pedro</td>
+          <td>111.111.111-11</td>
+          <td>josopedro@gmail.com</td>
+          <td>Rua Orásia</td>
+          <td><button class="btn-danger" onclick="excluirLinha(this)">Excluir</button></td>
+        </tr>
+        <tr>
+          <td>Pedro Zero</td>
+          <td>222.222.222-22</td>
+          <td>pedorzero@gmail.com</td>
+          <td>Rua Orásia de cima</td>
+          <td><button class="btn-danger" onclick="excluirLinha(this)">Excluir</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>Desenvolvido por Kauê</p>
+    <p>IPlast - Indústria de Plásticos</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

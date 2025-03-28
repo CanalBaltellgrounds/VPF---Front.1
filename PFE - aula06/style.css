@@ -1,0 +1,139 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    padding: 20px;
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 95%;
+  }
+  
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  th {
+    background-color: #000000;
+    color: #FFD700;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #333;
+  }
+  
+  tr:hover {
+    background-color: #2a2a2a;
+  }
+  
+  form {
+    margin: 20px 0;
+    padding: 25px;
+    background-color: #1e1e1e;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #FFD700;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="tel"],
+  select,
+  textarea {
+    display: block;
+    margin-bottom: 15px;
+    padding: 12px;
+    width: 100%;
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    color: #e0e0e0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+  }
+  
+
+  button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+  }
+  
+  .btn-primary {
+    background-color: #FFD700;
+    color: #000000;
+  }
+  
+  .btn-primary:hover {
+    background-color: #FFC000;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(255, 215, 0, 0.3);
+  }
+  
+  .btn-danger {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(231, 76, 60, 0.3);
+  }
+  
+
+  .fade-out {
+    animation: fadeOut 0.3s forwards;
+  }
+  
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+  
+  @media (max-width: 768px) {
+    main {
+      padding: 15px;
+    }
+    
+    form {
+      padding: 15px;
+    }
+    
+    button {
+      padding: 10px 20px;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  }

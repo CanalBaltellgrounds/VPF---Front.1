@@ -1,0 +1,37 @@
+footer {
+    background-color: #000000;
+    color: #FFD700;
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 2px solid #FFD700;
+    margin-top: 30px;
+    position: relative;
+    z-index: 100;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  footer p {
+    margin: 5px 0;
+    line-height: 1.5;
+  }
+  
+
+  footer a {
+    color: #FFD700;
+    text-decoration: none;
+    transition: opacity 0.3s;
+  }
+  
+  footer a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    footer {
+      padding: 10px 5px;
+      font-size: 0.8rem;
+    }
+  }
